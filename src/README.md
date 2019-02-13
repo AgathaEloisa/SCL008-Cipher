@@ -33,12 +33,6 @@ Los botones y cuadros de texto que se usaron fueron la menor cantidad posible, c
 Las instrucciones son muy simples. Lo primero es poner tu nombre en la caja de texto. No te preocupes, esto no quedará almacenado en una base de datos, así como nada de lo que escribas después.
 Antes de codificar o decodificar, debes ingresar un número de desplazamiento, el que tu quieras, esto es muy importante, porque de no ser así, el texto no se modificará. Asegúrate de marcar la opción de lo que quieras hacer (cifrar o descifrar) de Puedes enviarlo por correo electrónico o bien no hacerlo, no es un requisito.
 
-Más o menos así funciona Cipher Chat:
-```mermaid
-graph LR
-A(Número de <br> desplazamiento) --> B[Tu mensaje]
-B --> C(cifrar/<br>descifrar)
-C --> D(<center>Tu mensaje <br> cifrado)
-C --> E(<center>Tu mensaje <br> descifrado)
-```
+<img src="img/Screenshot from 2019-02-12 23-49-20.png">
+
 Eso es todo, ya puedes disfrutar de Cipher Char. ¡Bienvenido!
