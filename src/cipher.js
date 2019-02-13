@@ -1,5 +1,5 @@
 //función que codifica mayusculas.
-function encode (numb,text) {
+function encode(numb,text) {
   let resultado="";
   let ascii=0;
   //2) crear un loop.
@@ -26,7 +26,7 @@ function decode (numb,text) {
   for (let i=0; i<text.length;i++){
    ascii=text.charCodeAt(i);
     if(ascii>=65 && ascii<=90){
-      ascii = (ascii-39-parseInt(numb))%26+65;
+      ascii = (ascii+39-parseInt(numb))%26+65;
     }
     if(ascii>=97 && ascii<=122){
       ascii = (ascii-71-parseInt(numb))%26+97;
