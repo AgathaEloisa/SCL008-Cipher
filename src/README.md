@@ -31,7 +31,7 @@ Los botones y cuadros de texto que se usaron fueron la menor cantidad posible, c
 ## Instrucciones de uso
 
 Las instrucciones son muy simples. Lo primero es poner tu nombre en la caja de texto. No te preocupes, esto no quedará almacenado en una base de datos, así como nada de lo que escribas después.
-Antes de codificar o decodificar, debes ingresar un número de desplazamiento, el que tu quieras, esto es muy importante, porque de no ser así, el texto no se modificará. Asegúrate de marcar la opción de lo que quieras hacer (cifrar o descifrar) de Puedes enviarlo por correo electrónico o bien no hacerlo, no es un requisito.
+Antes de codificar o decodificar, debes ingresar un número de desplazamiento, el que tu quieras, esto es muy importante, porque de no ser así, el texto no se modificará. Asegúrate de marcar la opción de lo que quieras hacer (cifrar o descifrar, en mayúsculas o minusculas), Puedes enviarlo por correo electrónico o bien no hacerlo, no es un requisito.
 
 Más o menos así funciona Cipher Chat:
 
