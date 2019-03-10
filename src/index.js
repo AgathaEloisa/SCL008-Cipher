@@ -1,5 +1,8 @@
+//DOM!!
+
 //Función para pasar de pantalla 1 a 2.
-function changeScreen(){
+changeScreen = btnEnter.addEventListener('onclick', () => {
+  //hay que darle la funcionalidad al botón "btnEnter"
   document.getElementById("screen2").style.display="block";
   document.getElementById("screen1").style.display="none";
  //Cambia el texto para saludar al usuario por su nombre.
@@ -10,7 +13,8 @@ function changeScreen(){
 document.documentElement.scrollTop=0;
   //Limpia el campo.
   document.getElementById("userName").value="";
-}
+});
+
 //Función para pasar de pantalla 2 a 3 + saludo
 function changeScreen2(){
   document.getElementById("screen1").style.display="block";
