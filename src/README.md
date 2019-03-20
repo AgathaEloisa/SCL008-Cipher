@@ -37,7 +37,7 @@ Más o menos así funciona Cipher Chat:
 
 <img src="img/Screenshot from 2019-02-12 23-49-20.png">
 
-Eso es todo, ya puedes disfrutar de Cipher Char. ¡Bienvenido!
+Eso es todo, ya puedes disfrutar de Cipher Chat. ¡Bienvenido!
 
 #Link a trello
 https://trello.com/b/FonWu3iL/cifrado-cesar-agatha
