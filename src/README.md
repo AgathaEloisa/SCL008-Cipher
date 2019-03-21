@@ -1,43 +1,112 @@
-<img src="img/Screenshot from 2019-02-12 22-15-26.png"><br>
-# Readme
+# ¡Bienvenido a Onda Retro!
 
- 1. About Cipher Chat
- 2. Método de cifrado 
- 3. ¿Quienes son nuestros usuarios?
- 4. Decisiones de diseño
- 5. instrucciones de uso
- 6. link a trello
-
-# about Cipher Chat
-
-Cipher Chat nace pensada para adolescentes. Pretende ser una forma de conversación entretenida y a la vez secreta, por medio de correo electrónico. 
-La idea es mantener la privacidad del usuario tanto como sea posible, por lo que su uso va orientado sólo a y cifrar y descifrar. de manera que Cipher Chat no almacena datos permanentemente.
-
-## Método de cifrado
-
-Cipher Chat utiliza un tipo de cifrado llamado **cifrado cesar**, que consiste en desplazar una determinada cantidad de espacios las letras de un texto, substituyendo cada letra por la que ocupa el lugar de espacios que nos desplazamos a través del abecedario.
-Si no lo entiendes bien, no te preocupes, dentro de la misma aplicación web, en "**cómo funciona**", está incluido un link con más información, que puede ser de utilidad. 
+<img src="img/Onda_Retro.png" alt = "imagen pantalla principal o logo"/>
 
 
-## ¿Quienes son nuestros usuarios?
+# contenidos
 
-Cipher Chat está dirigido a personas en edad adolescente. Pretende ser un medio divertido de comunicación con sus pares, de complicidad con sus amigos. Esto, con el afán de mantener en secreto aquellas conversaciones privadas, confidencias, planes de los que otros no se deban enterar, como por ejemplo la organización de una fiesta sorpresa para un amigo que está de cumpleaños. 
+<ul>
+	<li>Qué es Onda Retro
+	<li>Modo de uso
+	<li>Especificaciones técnicas
+	<li>Testeo (prototipo de baja y alta fidelidad, encuesta)
+	<li>Miembros del equipo
+	<li>Links de interes
+	<li>Historia de usuario
+</ul><br>
 
-## Decisiones de diseño.
+## ¿Qué es Onda Retro?
 
-Sin usar colores fuertes, la intención fue darle un toque de misterio sin necesidad de restar color, vida, por lo que en contraste a la opacidad de los tonos morados, está el amarillo, que a su vez resalta lo importante.El texto.
-Los botones y cuadros de texto que se usaron fueron la menor cantidad posible, con intención de que la información visual fuese clara, para que el usuario se sintiese en control de la aplicación web, confiado y disfrutara de la experiencia.
+Esta es una interfaz centrada en entregar información de películas estrenadas entre los años 1940 y 1960, para un público adulto mayoritariamente de 21 a 40 años, Aquí podrás filtrar por año, género e idioma (español, inglés y portugués). además podrás ver algunas recomendaciones en el extremo inferior de la página.<br>
+Rescatando las películas de antaño, te presentamos Onda Retro.
+<br>
+## Modo de uso
 
-## Instrucciones de uso
+Para empezar a usar la interfaz, sólo debes clickear el icono central con la frase "realizar busqueda", esta acción te dirigirá a la pantalla dónde se encuentran las opciones de busqueda, puedes filtrar por año, género, y ademáspodrás filtrar por el idioma en el que quieres leer la información (español, inglés y portugués). Aparecerán en pantalla la o las imagenes que coincidan con tu busqueda. Para acceder a la información de la pelicula haz click en la imágen y se desplegará la información adicional.
+<br>
 
-Las instrucciones son muy simples. Lo primero es poner tu nombre en la caja de texto. No te preocupes, esto no quedará almacenado en una base de datos, así como nada de lo que escribas después.
-Antes de codificar o decodificar, debes ingresar un número de desplazamiento, el que tu quieras, esto es muy importante, porque de no ser así, el texto no se modificará. Asegúrate de marcar la opción de lo que quieras hacer (cifrar o descifrar, en mayúsculas o minusculas), Puedes enviarlo por correo electrónico o bien no hacerlo, no es un requisito.
+## Especificaciones técnicas
 
-Más o menos así funciona Cipher Chat:
+<br>
 
-<img src="img/Screenshot from 2019-02-12 23-49-20.png">
+### Organización
 
-Eso es todo, ya puedes disfrutar de Cipher Chat. ¡Bienvenido!
+En la organización utilizamos trello, delimitamos tareas y trabajamos con la metodología "pair programing".
 
-#Link a trello
-https://trello.com/b/FonWu3iL/cifrado-cesar-agatha
+<br>
+
+### Metodos utilizados
+
+<ul>
+	<li>HTML5 para mostrar la página al usuario y unir los script de JavaScript y <li>links de CSS, Materialize (incluyendo link al cdn de jquery para usar sus funciones)
+	<li>Uso de HTML5 dinámico desde el main.js
+	<li>Manejo del DOM desde main.js
+	<li>Uso de API OMDB y TMDB.
+	<li>Manejo de estilos CSS para la página de escritorio y responsivo, usando media <li>query para celulares y Tablet.
+	<li>Trabajo colaborativo mediante el uso de Git y GitHub
+</ul>
+
+<br>
+
+## Historia de usuario
+Queremos dar a conocer al usuario las películas de las quedispone según el año de interés. pensando en que estás películas están casi en el olvido y es poco probable que conozcan los títulos,
+
+## Testeo
+
+### Encuesta
+Antes que nada, fabricamos una encuesta para saber qué tipo de información espera obtener la gente de una interfaz como la nuestra, y aproximar un rango de edad al que dirigirnos.
+
+<img src = "img/grafico_etario.png" alt = "Gráfico de torta, por edades"/><br>
+Viendo que en su mayoría, quienes usan este tipo de páginas son personas de entre 21 a 40 años, desidimos enfocarnos en ese rango etario.
+
+<img src = "img/grafico_preferencias_paginas_de_peliculas.png" alt = "Gráfico en barra de intereses informativos de una película"/><br>
+Queríamos enfocarnos en tres filtros, las alternativas eran: título, año, duración, clasificación, género e idioma; y en base a lo que se muestra en el gráfico y nuestro proposito, desidímos hacerlo por género y duración, no descartando las otras posibilidades para el futuro.
+
+<img src = "img/grafico_recomendacion_peliculas.png" alt = "Gráfico de torta, espectativas de recomendaciones de películas"/><br>
+Un 98.2% está interesado en obtener recomendaciones dentro de la interfaz.
+
+<img src = "img/grafico_reseña.png" alt = "Gráfico de torta, espectativas de reseña"/><br>
+El 86% quiere tener a disposición una reseña de la película.
+
+<img src = "img/grafico_puntuacion_pelicula.png" alt = "Gráfico de torta, puntuación de una película"/><br>
+El 71% está interesado en saber la puntuación de las películas.
+
+<img src = "img/grafico_otra_informacion.png" alt = "Gráfico en barras, de otros intereses informativos"/><br>
+Esta ultima pregunta, tiene a intención de saber qué podemos implementar más adelante, teniendo como prioridad, información sobre actores y directores de cada película, así como ambién el filtro por títulos.
+
+### Prototipo de baja fidelidad
+
+Este prototipo se hizo de manera simple pero consisa y entendible.
+
+<img src = "img/pantallas.png" alt = "Pantalla 1"><br>
+
+### Prototipo de alta fidelidad
+
+Hecho en Figma.<br>
+<img src = "img/figma.png" alt = "4 pantallas en Figma">
+
+## Miembros del equipo
+
+<ul>
+	<li> 
+		<strong> Lorena Miranda: </strong>
+		<br>&emsp;
+		Para esta interfaz, Lorena estuvo encargada de los aspectos relacionado con UX, creando en papel el prototipo de alta fidelidad y, en figma, el prototipo de alta fidelidad y testeos en video, usando Loom.
+</ul>
+
+<ul>
+	<li>
+		<strong> Yaniza Molina, Fabiola Orellana y Paula Sáez: </strong>
+		<br>&emsp; 
+		Creadoras en conjunto de las historias de usuario, generamos filtros, modales e hicimos el readme.
+</ul> 
+
+
+
+## Links de interes
+<ul>
+	<li> <strong> Github: </strong>  https://github.com/faog/SCL008_hackaton_peliculas 
+	<li> <strong> Figma: </strong>https://www.figma.com/file/YBT047WUrg8QaMZzMMmcMCiT/Hackathon-Onda-Retro?node-id=0%3A1
+	<li> <strong> Loom: </strong>
+	<li> <strong> Trello: </strong> https://trello.com/b/P3vXqQyX/hackathon-de-peliculas
+</ul>
