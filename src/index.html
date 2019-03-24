@@ -13,74 +13,15 @@
   <img src="img/cipherchat.jpg"  id="cipherChat"/>
     <h3>La app más pulenta de cifrado</h3>
   </header>
+  <container id = "screen">
+
+  </container>
   
-  <!--Pantalla n°1 dividida en parte1 y parte2 respectivamente.-->
-  <div id="screen1">
-  <div id="part1">
-    <!--funcionamiento y linkeo a información adicional en wikipedia-->
-    <div>
-      <h2>Cómo funciona:</h2>
-      <p>Esta app usa el metodo de 
-        <a href="https://es.wikipedia.org/wiki/Cifrado_César" target=”_blank”>cifrado cesar</a>.<br>
-  Una vez que escribas tu mensaje en la caja de texto, puedes cifrarlo o descifrarlo según sea el caso, y enviarlo a cualquier dirección de correo electrónico. <br>
-  Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen fiestas, paseos, etc. tu decides como usarla.</p></div>
-    </div>
-    <div id="part2">
-    <!--interacción con el usuario, petición de nombre-->
-  <div>
-    <h1>¿cuál es tu nombre?</h1>
-  </div>
-      <div>
-        <input type="text" id="userName" placeHolder="tu nombre aquí">
-      </div>
-      <div>
-        <input type="submit" id="btnEnter" value="Entrar">
-      </div>
-  </div> 
-    </div> 
-  <!--Pantalla n°2-->
-  <div id="screen2">
-    <!--Saludo personalizado con el nombre del usuario-->
-    <div>
-      <h2 id="greeting"></h2>
-    </div>
-    <!--El usuario especifica el número de desplazamiento que tendrá su cifrado-->
-    <div>
-      <h2>N° de desplazamiento:  
-        <input type="number" min="1" max="99" placeholder="N°" id="numbBox" value="0">
-      </h2>
-    </div>
-      <div class="inpRadio"> 
-        <h3>
-          <input id="encode" type="radio" name="change" value="Codificar" checked>Codificar
-        </h3>
-        <h3>
-          <input id="decode" type="radio" name="change" value="Decodificar">Decodificar
-        </h3>
-      </div>
-      <!--Donde el usuario escribe el mensaje a decodificar-->
-<input type="text" id="text1">
- <!--Botón convertir, que codifica el texto que entrega el usuario-->
-    <div>
-      <input type="button" id="btnConvert" value="Convertir" onclick="takeValue()">
-    </div>
-      <!--Donde el usuario recibe su mensaje procesado-->
-<div>
-  <h3>Resultado:</h3>
-    <input type="text" id="text2">
-</div>
-<!--caja de texto donde va el correo-->
-    <div>
-      <input type="email" id="eMail" placeHolder="Ingresa correo"><input type="submit" id="btnSend" value="Enviar" onclick="sendMail()">
-    </div>
-    <div> 
-        <!--Botón que envía a pag.1-->
-        <input type="button" id="btnhome" value= "cambiar de usuario" onclick="changeScreen2()">
-    </div>
-  </div>
+<footer>
+
+</footer>
 
   <script type="text/javascript" src="index.js"></script>
   <script type="text/javascript" src="cipher.js"></script>
-
 </body>
 </html>
