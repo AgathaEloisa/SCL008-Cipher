@@ -25,7 +25,7 @@ Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen 
 
 
   //Función para pasar de pantalla 1 a 2.
-const changeScreen = document.getElementById ("btnEnter") .addEventListener ('click', () => {
+const changeScreen = document.getElementById ("btnEnter") .addEventListener ("click", () => {
 document.getElementById ("screen") .innerHTML = " ";
 document.getElementById ("screen") .innerHTML += 
 `
