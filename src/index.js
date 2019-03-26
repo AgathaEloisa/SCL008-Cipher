@@ -1,6 +1,7 @@
 //DOM!!
-document.getElementById ("screen") .innerHTML = " ";
-document.getElementById ("screen") .innerHTML += 
+function home () {
+  document.getElementById ("screen") .innerHTML = " ";
+  document.getElementById ("screen") .innerHTML += 
 `
     <!-- Pantalla home dividida en part1 y part2 respectivamente. -->
 <section id = "part1">
@@ -22,6 +23,7 @@ Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen 
   </div>
 </section>
 `
+};
 
 
   //Función para pasar de pantalla 1 a 2.
@@ -80,6 +82,11 @@ document.documentElement.scrollTop=0;
 document.getElementById("userName").value="";
 });
 
+
+const returnHome = document.getElementById ("btnhome") .addEventListener ("click", () => {
+    document.getElementById ("screen") .innerHTML = " ";
+    document.getElementById ("screen") .innerHTML += `${home}`;
+})
 //document.getElementById ("btnhome") .addEventListener("click", () => {
 
   //hay que darle la funcionalidad al botón "btnEnter"
@@ -88,12 +95,12 @@ document.getElementById("userName").value="";
 
 
 //Función para pasar de pantalla 2 a 3 + saludo
-function changeScreen2(){
-  document.getElementById("screen1").style.display="block";
-  document.getElementById("screen2").style.display="none";
+//function changeScreen2(){
+ // document.getElementById("screen1").style.display="block";
+//  document.getElementById("screen2").style.display="none";
     //primera linea de la pantalla.
-    document.documentElement.scrollTop=0;
-}
+  //  document.documentElement.scrollTop=0;
+//}
 //tomando valores
 function takeValue(){
   let number=parseInt(document.getElementById("numbBox").value);
