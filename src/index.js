@@ -20,11 +20,10 @@ Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen 
   <input type="text" id="username" placeHolder="tu nombre aquí">
   <input type="submit" id="btnenter" value="Entrar">
 </div>
-${document.documentElement.scrollTop=0}
 `
 
 document.getElementById('username').value='';
-
+document.documentElement.scrollTop=0;
 
 //-------------- Pantalla dos ------------//
 
@@ -56,7 +55,8 @@ document.getElementById('btnenter').addEventListener('click', () => {
         <input type="text" id="text1">
     <div>
 
-    <!--Botón convertir, que codifica el texto que entrega el usuario-->
+        <!--Botón convertir, que codifica el texto que entrega el usuario-->
+        <!-- Trigger/Open The Modal -->
       <input type="submit" id="btnconvert" value="Convertir">
 
     <div>
@@ -74,21 +74,18 @@ document.getElementById('btnenter').addEventListener('click', () => {
     `
 
 
-    // Función que codifica y decodifica seún el radio button seleccionado.
-document.getElementById('btnconvert').addEventListener('click', () => {
+    // Función que toma valores y, codifica y decodifica seún el radio button seleccionado.
+  document.getElementById('btnconvert').addEventListener('click', () => {
     let number = parseInt(document.getElementById('numbbox').value);
     let text = document.getElementById('text1').value;
 
       if(number === 0){
-        // modal first attempt
-        alert('por favor selecciona un número de desplazamiento');
-
+         alert('por favor selecciona un número de desplazamiento');
 
       } else {
         if (document.getElementById('encode').checked) {
           document.getElementById('text2').value = encode(number,text);
-        }
-        else{
+        } else {
           document.getElementById('text2').value = decode(number,text);
         }
       };
@@ -97,29 +94,19 @@ document.getElementById('btnconvert').addEventListener('click', () => {
     document.documentElement.scrollTop=0;
 });
 
- /*   //tomando valores
-function takeValue(){
-    let number=parseInt(document.getElementById("numbBox").value);
-    let text=document.getElementById("text1").value;
-    if (document.getElementById("encode").checked){
-       document.getElementById("text2").value=encode(number,text);
-    }
-    else{
-        document.getElementById("text2").value=decode(number,text);
-    }
-    document.getElementById("text1").value="";
-  };
-*/
     document.documentElement.scrollTop=0;
+
+    //volviendo a la pantalla principal
+  document.getElementById('btnhome').addEventListener('click', () => {
+      document.getElementById('screen').innerHTML = '';
+      document.getElementById('screen').innerHTML += 
+      
+      `
+      ${home}
+      `
+
+      document.documentElement.scrollTop=0;
+  });
+  
 });
 
-document.getElementById('btnhome').addEventListener('click', () => {
-    document.getElementById('screen').innerHTML = '';
-    document.getElementById('screen').innerHTML += 
-    
-    `
-    ${home}
-    `
-
-    document.documentElement.scrollTop=0;
-});
