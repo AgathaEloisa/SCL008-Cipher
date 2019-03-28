@@ -2,8 +2,8 @@
 
 //-------------- Pantalla uno ------------//
 
-document.getElementById('screen').innerHTML = '';
-let home = document.getElementById('screen').innerHTML += 
+let home = document.getElementById('screen').innerHTML = '';
+document.getElementById('screen').innerHTML += 
     
 `        
 <div id="part1">
@@ -61,7 +61,7 @@ document.getElementById('btnenter').addEventListener('click', () => {
 
     <div>
       <h2 class="textresult">Resultado:</h2>
-        <input type="text" id="text2">
+        <p id="text2"></p>
     </div>
 
         <!--caja de texto donde va el correo-->
@@ -84,9 +84,9 @@ document.getElementById('btnenter').addEventListener('click', () => {
 
       } else {
         if (document.getElementById('encode').checked) {
-          document.getElementById('text2').value = encode(number,text);
+          document.getElementById('text2').innerHTML = `${encode(number,text)}`;
         } else {
-          document.getElementById('text2').value = decode(number,text);
+          document.getElementById('text2').innerHTML = `${encode(number,text)}`;
         }
       };
 
@@ -109,7 +109,7 @@ document.getElementById('btnenter').addEventListener('click', () => {
   });
 
   // función que "envía correo"
-  const sendMail = document.getElementById('btnsend').addEventListener('click', () => {
+  document.getElementById('btnsend').addEventListener('click', () => {
     document.getElementById('email').value;
     document.getElementById('email').value = '';
   });
