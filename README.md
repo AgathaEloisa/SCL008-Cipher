@@ -1,4 +1,4 @@
-<img src="img/Screenshot from 2019-02-12 22-15-26.png"><br>
+("img/Screenshot from 2019-02-12 22-15-26.png")<br>
 # Readme
 
  1. About Cipher Chat
@@ -35,7 +35,7 @@ Antes de codificar o decodificar, debes ingresar un número de desplazamiento, e
 
 Más o menos así funciona Cipher Chat:
 
-<img src="img/Screenshot from 2019-02-12 23-49-20.png">
+(img/Screenshot from 2019-02-12 23-49-20.png)
 
 Eso es todo, ya puedes disfrutar de Cipher Chat. ¡Bienvenido!
 
