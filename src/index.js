@@ -107,6 +107,12 @@ document.getElementById('btnenter').addEventListener('click', () => {
 
       document.documentElement.scrollTop=0;
   });
+
+  // función que "envía correo"
+  const sendMail = document.getElementById('btnsend').addEventListener('click', () => {
+    document.getElementById('email').value;
+    document.getElementById('email').value = '';
+  });
   
 });
 
