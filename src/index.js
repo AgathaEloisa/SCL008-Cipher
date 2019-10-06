@@ -12,7 +12,9 @@ document.getElementById('screen').innerHTML +=
     <p> Esta app usa el metodo de 
     <a href="https://es.wikipedia.org/wiki/Cifrado_César" target=”_blank”> cifrado cesar </a> . <br>
 Una vez que escribas tu mensaje en la caja de texto, puedes cifrarlo o descifrarlo según sea el caso, y enviarlo a cualquier dirección de correo electrónico. <br>
-Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen fiestas, paseos, etc. tu decides como usarla. </p> </div>
+Lo que escribas no será archivado. Comparte secretos con tus amigos, organicen fiestas, paseos, etc. tu decides como usarla. <br>
+Puedes usar letras, números y caractéres; los espacios no se modificarán.    </p> 
+  </div>
 </div>
 <div id="part2">
 <!--interacción con el usuario, petición de nombre-->
@@ -70,7 +72,7 @@ document.getElementById('btnenter').addEventListener('click', () => {
     </div>
 
         <!--Botón que envía a pag.1-->
-        <input type="submit" id="btnhome" value= "cambiar de usuario">
+        <input type="submit" id="btnhome" value="cambiar de usuario">
     `
 
 
