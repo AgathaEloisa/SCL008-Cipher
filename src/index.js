@@ -74,7 +74,7 @@ document.getElementById('btnenter').addEventListener('click', () => {
     `
 
 
-    // Función que toma valores y, codifica y decodifica seún el radio button seleccionado.
+    // Función que toma valores y, codifica o decodifica seún el radio button seleccionado.
   document.getElementById('btnconvert').addEventListener('click', () => {
     let number = parseInt(document.getElementById('numbbox').value);
     let text = document.getElementById('text1').value;
@@ -86,7 +86,7 @@ document.getElementById('btnenter').addEventListener('click', () => {
         if (document.getElementById('encode').checked) {
           document.getElementById('text2').innerHTML = `${encode(number,text)}`;
         } else {
-          document.getElementById('text2').innerHTML = `${encode(number,text)}`;
+          document.getElementById('text2').innerHTML = `${decode(number,text)}`;
         }
       };
 
