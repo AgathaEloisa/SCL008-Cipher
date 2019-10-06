@@ -4,8 +4,8 @@ function encode(numb, text) {
   let result = "";
   let ascii = 0;
   // Carácteres especiales
-  let specialCharactersUpper = [ 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ' ]
-  let specialCharactersLower = [ 'á', 'é', 'í', 'ó', 'ú', 'ñ' ];
+  let specialCharactersUpper = ['Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ']
+  let specialCharactersLower = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
   //2) crear un loop.
   for (let i = 0; i < text.length; i++) {
     //3)aplicar codigo ascii.
@@ -47,33 +47,43 @@ function encode(numb, text) {
   return result;
 }
 
-      // loop para recorrer el array de carácteres especiales
-    //   for(let i = 0; i < specialCharactersLower.length; numb){
-    //     if(text.charCodeAt(i) === specialCharactersLower[i]){
-    //       result = specialCharactersLower[i];
-    //     }
-    // }
-    
+// loop para recorrer el array de carácteres especiales
+//   for(let i = 0; i < specialCharactersLower.length; numb){
+//     if(text.charCodeAt(i) === specialCharactersLower[i]){
+//       result = specialCharactersLower[i];
+//     }
+// }
+
 // Función que decondifica
-function decode (numb,text) {
+function decode(numb, text) {
   let resultado = "";
   let ascii = 0;
-  for (let i = 0; i < text.length; i++){
-   ascii = text.charCodeAt(i);
-// Mayusculas
-    if(ascii >= 65 && ascii <= 90){
+  for (let i = 0; i < text.length; i++) {
+    ascii = text.charCodeAt(i);
+    // Mayusculas
+    if (ascii >= 65 && ascii <= 90) {
       ascii = (ascii + 39 - parseInt(numb)) % 26 + 65;
     }
     // Minúsculas
-    if(ascii >= 97 && ascii <= 122){
+    if (ascii >= 97 && ascii <= 122) {
       ascii = (ascii - 71 - parseInt(numb)) % 26 + 97;
     }
     // Números
-    if(ascii >= 48 && ascii <= 57){
+    if (ascii >= 48 && ascii <= 57) {
       // ascii = (ascii - 48 + parseInt(numb)) % 10 + 48;
       ascii = (ascii - 38 - parseInt(numb)) % 10 + 48;
     }
-      resultado += String.fromCharCode(ascii);
+    // signos de puntuación divididos según su hubicación (podría concatenarlo de alguna forma(?))
+    if (ascii >= 33 && ascii <= 47) {
+      ascii = (ascii - 18 - parseInt(numb)) % 15 + 33;
+    } else if (ascii >= 58 && ascii <= 64) {
+      ascii = (ascii - 51 - parseInt(numb)) % 7 + 58;
+    } else if (ascii >= 91 && ascii <= 96) {
+      ascii = (ascii - 85 - parseInt(numb)) % 6 + 91;
+    } else if (ascii >= 123 && ascii <= 126) {
+      ascii = (ascii - 119 - parseInt(numb)) % 4 + 123;
+    }
+    resultado += String.fromCharCode(ascii);
   }
   return resultado;
 }
