@@ -4,8 +4,8 @@ function encode(numb, text) {
   let result = "";
   let ascii = 0;
   // Carácteres especiales
-  let specialCharactersUpper = ['Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ']
-  let specialCharactersLower = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
+  // let specialCharactersUpper = ['Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ']
+  // let specialCharactersLower = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
   //2) crear un loop.
   for (let i = 0; i < text.length; i++) {
     //3)aplicar codigo ascii.

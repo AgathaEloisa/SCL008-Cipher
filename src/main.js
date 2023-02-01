@@ -1,6 +1,6 @@
 import { router } from './router.js';
 
-const initApp = () => {
+function initApp() {
     router();
 }
 
