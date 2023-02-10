@@ -34,7 +34,6 @@ document.getElementById('btnenter').addEventListener('click', () => {
     let name = document.getElementById('username').value;
     document.getElementById('screen').innerHTML = '';
     document.getElementById('screen').innerHTML += 
-    
     `
     <h2 id="greeting"> Hola ${name} comienza por elegir un número de 
     desplazamiento y escribe lo que quieras </h2>
