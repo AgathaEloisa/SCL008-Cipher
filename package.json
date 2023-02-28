@@ -12,11 +12,16 @@
     "test": "npm run test-node && npm run test-browser"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
     "chai": "^4.1.2",
     "eslint": "^5.16.0",
     "htmlhint": "^1.1.4",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "opener": "^1.4.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12"
   }
 }
